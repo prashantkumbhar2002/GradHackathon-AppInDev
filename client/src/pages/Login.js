@@ -13,7 +13,7 @@ const Login = () => {
   const onfinishHandler = async (values) => {
     try {
       dispatch(showLoading());
-      const res = await axios.post("http://127.0.0.1:8005/api/v1/user/login", values);
+      const res = await axios.post("http://127.0.0.1:8001/api/v1/user/login", values);
       window.location.reload();
       dispatch(hideloading());
       if (res.data.success) {

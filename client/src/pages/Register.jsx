@@ -13,7 +13,7 @@ const Register = () => {
 
     try {
       dispatch(showLoading());
-      const res = await axios.post("http://127.0.0.1:8005/api/v1/user/register", values);
+      const res = await axios.post("http://127.0.0.1:8001/api/v1/user/register", values);
       dispatch(hideloading());
       if (res.data.success) {
         message.success("Register Successfully!");

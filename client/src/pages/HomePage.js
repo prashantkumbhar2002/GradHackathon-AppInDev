@@ -7,7 +7,7 @@ const HomePage =()=>{
     //login user data
     const getUserData = async () => {
         try{
-            const res =  await axios.post('http://127.0.0.1:8005/api/v1/user/getUserData',{},{
+            const res =  await axios.post('http://127.0.0.1:8001/api/v1/user/getUserData',{},{
                 headers: {
                     Authorization : "Bearer "+ localStorage.getItem('token'),
                 },
